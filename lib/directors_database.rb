@@ -5,3 +5,6 @@ def directors_database
   @_db ||= YAML.load(rot13.call(File.open("directors_db").read.to_s))
 end
 
+grand_total = 0
+ row_index = 0
+ while row_index < vm.length do
